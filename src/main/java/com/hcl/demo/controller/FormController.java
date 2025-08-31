@@ -20,7 +20,7 @@ public class FormController {
 		
 		@RequestMapping(value = "/processform",method = RequestMethod.POST)
 		public String handleForm(@ModelAttribute("student") Student student,
-															BindingResult result) {    // to handle the errors
+															BindingResult result) {     // to handle the errors
 			System.out.println(student);
 			if(result.hasErrors()) {
 				
